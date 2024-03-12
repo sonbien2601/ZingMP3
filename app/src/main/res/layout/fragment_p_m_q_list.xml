@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.PMQFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <!-- TODO: Update blank fragment layout -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/pmqfragment"
+                app:cardCornerRadius="8dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnAddSong"
+                android:layout_gravity="right"
+                android:text="Thêm bài hát mới"
+                android:textSize="20dp"
+                >
+            </Button>
+            <Button
+                android:id="@+id/btnbackpmq"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/backfm"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"/>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nhập tên bài hát"
+                android:id="@+id/edtAddNameSong"
+                android:textColorHint="@color/black">
+            </EditText>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPlaypmq"
+                android:text="Play"
+                android:textSize="20dp">
+            </Button>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/lv_pmq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</FrameLayout>

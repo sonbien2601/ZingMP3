@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:background="@drawable/bglogin">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/bgcard">
+
+            <EditText
+                android:id="@+id/edtID"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="70dp"
+                android:ems="10"
+                android:textSize="13sp"
+                android:hint="Tên đăng nhập"
+                android:textColor="@color/white"
+                android:inputType="text"
+                android:textColorHint="@color/white"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/edtPass"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:hint="Mật Khẩu"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:inputType="text"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="ĐĂNG NHẬP"
+                android:background="@android:color/transparent"
+                tools:ignore="MissingConstraints" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btnQMK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quên mật khẩu"
+                    android:textSize="13sp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="Đăng ký"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="30dp"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</FrameLayout>
